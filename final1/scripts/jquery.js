@@ -70,30 +70,26 @@ function displayDataToTable(data) {
         columns: [  //within this columns attribute. you designate a title and the data that will
                     //be associated with that column within the data object.
             {
+                "data": 'fullName',
+                "title": 'Full Name'
+            },
+            {
+                "data": 'subject',
+                "title": 'Subject'
+            },
+            {
+                "data": 'location',
+                "title": 'Location'
+            },
+            {
                 "data": 'availability', //data is the key and the value is the key in the data object
                                         //passed into this function.
                 "title": 'Availability'
             },
             {
-                "data": 'fullName',
-                "title": 'Full Name'
-            },
-            {
-                "data": 'location',
-                "title": 'Location'
-            },
-            {
-                "data": 'needs',
-                "title": 'Needs'
-            },
-            {
                 "data": 'phoneNumber',
                 "title": 'Phone Number'
             },
-            {
-                "data": 'location',
-                "title": 'Location'
-            }
         ]
     });
 }

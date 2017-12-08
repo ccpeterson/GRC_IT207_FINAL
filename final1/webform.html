@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>webform</title>
+  <title>webform</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="global.css">
+  <link rel="stylesheet" type="text/css" href="webform.css">
 </head>
 <body>
-  <form id="uForm" method="post">
-    <fieldset id="uInfo">
-      <legend>User Information</legend>
-      <label for="name">Full Name *</label>
-      <input name="name" id="name" type="text" size="40" required/>
-      <br/>
-      <label for="subject">Subject *</label>
-      <input name="subject" id="subject" type="text" size="20" required/>
-       <br/>
-      <label for="location">Location *</label>
-      <input name="location" id="location" type="text" size="20" required/>
+  <header>
+    <h1>Tutor Database</h1>
+    <div id="webButton">
+      <form action="test1.html">
+        <input type="submit" value="Back to Home" id="addTicket"/>
+      </form>
+    </div>
+  </header>
+  <div id="paddingtop"></div>
+  <div id="container">
+    <h1 id="title">Please Enter Information For Your Ticket</h1>
+    <form id="uForm" method="post">
+      <fieldset id="uInfo">
+        <legend>User Information</legend>
+        <label for="name">Full Name *</label>
+        <input name="name" id="name" type="text" size="40" required/>
         <br/>
-      <label for="pNumber">Phone Number *</label>
-      <input name="pNumber" id="pNumber" type="text" size="20" required/>
-       <br/>
-      <label for="availability">Availability *</label>
-      <input name="availability" id="availability" type="text" size="20" required/>
-        <br/>
-      <label for="needs">Needs *</label>
-      <input name="needs" id="needs" type="text" size="20" required/>
-        <br/>
-        <br/>
-         <input type="submit" value="Submit"/>
-      </fieldset>
-
+        <label for="subject">What You Would Like Help In *</label>
+        <input name="subject" id="subject" type="text" size="20" required/>
+         <br/>
+        <label for="location">Prefered Meeting Location *</label>
+        <input name="location" id="location" type="text" size="20" required/>
+          <br/>
+        <label for="pNumber">Phone Number *</label>
+        <input name="pNumber" id="pNumber" type="text" size="20" required/>
+         <br/>
+        <label for="availability">What Time You Are Available *</label>
+        <input name="availability" id="availability" type="text" size="20" required/>
+          <br/>
+          <br/>
+           <input type="submit" value="Submit" id="submit"/>
+        </fieldset>
+      </div>
+    <div id="bottompadding"></div>
+    <footer>
+      <p> Created by Conner Ledbetter and Clinton Peterson</p>
+    </footer>
 </body>
 </html>

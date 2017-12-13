@@ -38,16 +38,23 @@
 //     ["Unity Butler", "Marketing Designer", "San Francisco", "5384", "2009/12/09", "$85,675"]
 // ];
 
+var data;
+var parameters;
 $(document).ready(function () {
     //get the data out of the json file
-    var data = getData();
+    data = getData();
+    counter++;
+      parameters = getQueryString();
+      var obj = JSON.stringify(parameters);
+      myObj = JSON.parse(obj);
+      data.push(myObj);
 
     console.log(data);
 
     //lets display the data
     //load the json data from the ajax request into this function so we can display it to the data table
     displayDataToTable(data);
-
+    console.log(tableCounter);
 });
 
 function displayDataToTable(data) {

@@ -1,10 +1,23 @@
-var fullName;
-var subject;
-var location;
-var availability;
-var phoneNumber;
-var myObj;
+var retrivedObject;
+var tableCounter = 0;
 
+function getQueryString() {
+  var result = {}, queryString = location.search.slice(1),
+      re = /([^&=]+)=([^&]*)/g, m;
+
+  while (m = re.exec(queryString)) {
+    result[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+  }
+
+  return result;
+}
+
+$("#addTicket").click(function(){
+  window.location.href ="webform.html";
+});
+
+// OLD CODE, tried really hard on this and gave me good Information
+/*
 function validateForm() {
     var fullName = document.getElementById("name").value;
     var subject = document.getElementById("subject").value;
@@ -34,11 +47,6 @@ function validateForm() {
     }
 
     console.log(fullName);
-
-    var people = {};
-    var tutors = [];
-    people.tutors = tutors;
-
     var tutors = {
       "fullName": fullName,
       "subject": subject,
@@ -47,13 +55,18 @@ function validateForm() {
       "availability": availability
     }
 
+
+
     var obj = JSON.stringify(tutors);
     myObj = JSON.parse(obj);
     console.log(myObj);
+    data.push(myObj);
+    console.log(data);
 
+    var test = getData();
+    test.push(myObj);
+    localStorage.setItem('tutors', JSON.stringify(test));
+    retrivedObject = localStorage.getItem('tutors');
+    console.log(JSON.parse(retrivedObject));
   }
-
-
-$("#addTicket").click(function(){
-  window.location.href ="webform.html";
-});
+*/

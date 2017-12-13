@@ -1,8 +1,10 @@
 #container {
-  padding-bottom: 300px;
+  padding-bottom: 200px;
+  padding-left: 500px;
 }
 
 #title {
   text-decoration: underline;
   text-align: center;
+  margin-right: 55%;
 }

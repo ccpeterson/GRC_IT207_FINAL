@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>webform</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="global.css">
-  <link rel="stylesheet" type="text/css" href="webform.css">
+  <head>
+    <title>webform</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" type="text/css" href="webform.css">
 
-  <script src="scripts/jquery-3.2.1.js"></script>
-  <script src="scripts/jquery.js"></script>
-  <script src="scripts/jquery.dataTables.min.js"></script>
-  <script src="buttonstuff.js"></script>
-</head>
-<body>
-  <header>
-    <h1>Tutor Database</h1>
-    <div id="webButton">
-      <form action="test1.html">
-        <input type="submit" value="Back to Home" id="addTicket"/>
-      </form>
-    </div>
-  </header>
-  <div id="paddingtop"></div>
-  <div id="container">
-    <h1 id="title">Please Enter Information For Your Ticket</h1>
-
+    <script src="scripts/jquery-3.2.1.js"></script>
+    <script src="scripts/jquery.dataTables.min.js"></script>
+    <script src="buttonstuff.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Tutor Database</h1>
+      <div id="webButton">
+        <form action="test1.html">
+          <input type="submit" value="Back to Home" id="addTicket"/>
+        </form>
+      </div>
+    </header>
+    <div id="paddingtop"></div>
+    <div id="container">
+      <h1 id="title">Please Enter Information For Your Ticket</h1>
+      <form action="test1.html" method="GET" onsubmit="return counter();">
         Full Name:
-        <input name="name" id="name" type="text" size="40">
+        <input name="fullName" id="fullName" type="text" size="40">
         <br/>
         What You Would Like Help In:
         <input name="subject" id="subject" type="text" size="20">
-         <br/>
+        <br/>
         Prefered Meeting Location:
         <input name="location" id="location" type="text" size="20">
-          <br/>
-        Phone Number:
-        <input name="pNumber" id="pNumber" type="text" size="20">
-         <br/>
+        <br/>
         What Time You Are Available:
         <input name="availability" id="availability" type="text" size="20">
-          <br/>
-          <br/>
-           <button id="submit" onclick="validateForm()">Submit</button>
-      </div>
-    <div id="bottompadding"></div>
-    <footer>
-      <p> Created by Conner Ledbetter and Clinton Peterson</p>
-    </footer>
-</body>
+        <br/>
+        Phone Number:
+        <input name="phoneNumber" id="phoneNumber" type="text" size="20">
+        <br/>
+        <br/>
+        <input type="submit" value="submit">
+      </form>
+    </div>
+      <div id="bottompadding"></div>
+      <footer>
+        <p> Created by Conner Ledbetter and Clinton Peterson</p>
+      </footer>
+  </body>
 </html>

@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>webform</title>
+    <!--
+    Conner Ledbetter and Clinton Peterson
+    12/13/17
+    webform.html
+
+    This is our webform that sends data to our main page for our tutor project
+    -->
+    <!--Scripts and Styles-->
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="global.css">
     <link rel="stylesheet" type="text/css" href="webform.css">
-
     <script src="scripts/jquery-3.2.1.js"></script>
     <script src="scripts/jquery.dataTables.min.js"></script>
     <script src="buttonstuff.js"></script>
   </head>
   <body>
     <header>
-      <h1>Tutor Database</h1>
+      <!--Main Header-->
+      <h1>Ttr Fndr</h1>
+      <!--Button to go back home-->
       <div id="webButton">
         <form action="test1.html">
           <input type="submit" value="Back to Home" id="addTicket"/>
@@ -21,8 +29,9 @@
     </header>
     <div id="paddingtop"></div>
     <div id="container">
+      <!--Input text boxes that sends information to our main page when submitted-->
       <h1 id="title">Please Enter Information For Your Ticket</h1>
-      <form action="test1.html" method="GET" onsubmit="return counter();">
+      <form action="test1.html" method="GET">
         Full Name:
         <input name="fullName" id="fullName" type="text" size="40">
         <br/>
@@ -43,6 +52,7 @@
       </form>
     </div>
       <div id="bottompadding"></div>
+      <!--Footer-->
       <footer>
         <p> Created by Conner Ledbetter and Clinton Peterson</p>
       </footer>

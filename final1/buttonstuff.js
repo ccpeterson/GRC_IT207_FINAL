@@ -1,6 +1,4 @@
-var retrivedObject;
-var tableCounter = 0;
-
+//function to get a queryString from a url
 function getQueryString() {
   var result = {}, queryString = location.search.slice(1),
       re = /([^&=]+)=([^&]*)/g, m;
@@ -12,6 +10,7 @@ function getQueryString() {
   return result;
 }
 
+//when clicking the addTicket button go to the webfrom
 $("#addTicket").click(function(){
   window.location.href ="webform.html";
 });

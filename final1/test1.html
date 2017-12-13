@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Practicing with jQuery</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <script src="scripts/jquery-3.2.1.js"></script>
-        <script src="scripts/jquery.js"></script>
-        <script src="scripts/jquery.dataTables.min.js"></script>
-        <script src="buttonstuff.js"></script>
-        <link rel="stylesheet" type="text/css" href="global.css">
+      <!--
+      Conner Ledbetter and Clinton Peterson
+      12/13/17
+      test1.html
+
+      This is the main homepage that contains the table for our tutor website
+      -->
+      <!--Scripts and Styles-->
+      <meta charset="utf-8">
+      <title>Practicing with jQuery</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <script src="scripts/jquery-3.2.1.js"></script>
+      <script src="scripts/jquery.js"></script>
+      <script src="scripts/jquery.dataTables.min.js"></script>
+      <script src="buttonstuff.js"></script>
+      <link rel="stylesheet" type="text/css" href="global.css">
+
+      <title>Ttr Fndr</title>
     </head>
     <body>
       <header>
-        <h1 id="title">Tutor Database</h1>
+        <!--Website heading-->
+        <h1 id="title">Ttr Fndr</h1>
+        <!--Button to go to webform-->
         <div id="webButton">
+          <!--When button is clicked go to the webform-->
           <form action="webform.html">
-            <input type="submit" value="Add A Request" id="addTicket"/>
+            <input type="submit" value="Add A Request" id="addTicket" onclick="counter();"/>
           </form>
         </div>
       </header>
+      <!--Some padding-->
       <div id="paddingtop"></div>
       <div id="container">
+        <!--Our tutor's table-->
         <table id="example" class="display" width="100%"></table>
       </div>
       <div id="bottompadding"></div>
+      <!--Footer-->
       <footer>
         <p>Created by Conner Ledbetter and Clinton Peterson</p>
       </footer>

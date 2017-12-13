@@ -38,23 +38,30 @@
 //     ["Unity Butler", "Marketing Designer", "San Francisco", "5384", "2009/12/09", "$85,675"]
 // ];
 
+//fields
 var data;
 var parameters;
+
+//main function
 $(document).ready(function () {
     //get the data out of the json file
     data = getData();
-    counter++;
-      parameters = getQueryString();
-      var obj = JSON.stringify(parameters);
-      myObj = JSON.parse(obj);
-      data.push(myObj);
 
+    //using the get query string function, split the url information into an array
+    parameters = getQueryString();
+    //make the array into a string
+    var obj = JSON.stringify(parameters);
+    //parse the string and turn it into a json object
+    myObj = JSON.parse(obj);
+    //push the json object into the data
+    data.push(myObj);
+
+    //log the data to the console
     console.log(data);
 
     //lets display the data
     //load the json data from the ajax request into this function so we can display it to the data table
     displayDataToTable(data);
-    console.log(tableCounter);
 });
 
 function displayDataToTable(data) {
